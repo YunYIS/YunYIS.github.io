@@ -1,0 +1,721 @@
+/*全局统一格式*/
+	*{margin:0;padding:0;}
+	ul{list-style: none;}
+	a{text-decoration: none;}
+/*头部导航条css style*/
+	/*总宽度*/
+	div.header{
+		width: 100%;
+		background-color: #333333;
+	}
+	/*内容部分*/
+	div.navigation_bar{
+		width: 1226px;
+		height: 40px;
+		margin: auto;
+	}
+	/*总体ul统一格式*/
+	div.navigation_bar>ul{
+		line-height: 40px;
+		color: #B0B0B0
+	}
+	/*所有li的统一格式*/
+	div.navigation_bar>ul>li{
+		font-size: 12px;
+	}
+	div.navigation_bar>ul>li>a{
+		color: #B0B0B0;
+	}
+	div.navigation_bar>ul>li>a:hover{
+		color: white;
+	}
+	div.navigation_bar>ul>li>span{
+		margin-left: 6px;
+		margin-right: 6px;
+		font-family: sans-serif;
+	}
+	/*左部分导航栏对齐左侧*/
+	ul.left_navigation_bar>li{
+		float:left;
+	}
+	/*右部分导航栏对齐右侧*/
+	ul.right_navigation_bar>li{
+		float: right;
+	}
+/*头部下方导航栏css style*/
+	/*总宽度*/
+	div.nav2{
+		width:100%;
+		height: 100px;
+	}
+	/*内容宽度*/
+	div.nav2_content{
+		width:1226px;
+		margin: auto;
+		height: 100px;
+	}
+	/*小米logo图片格式*/
+	div.nav2_content>img{
+		display: inline-block;
+		margin-top: 25px; 
+		float: left;
+	}
+	/*中间分类栏ul的格式*/
+	div.nav2_content>ul{
+		line-height: 100px;
+		margin-left: 15%;
+	}
+	/*分类栏li统一格式*/
+	div.nav2_content>ul>li{
+			float: left;
+			font-size: 16px;
+			margin-right: 20px; 
+	}
+	div.nav2_content>ul>li>a{
+		color: black;
+	}
+	div.nav2_content>ul>li>a:hover{
+		color: #ff6700;
+	}
+	/*文本输入框格式*/
+	div.nav2_content>input.text_input{
+		width: 245px;
+		height: 52px;
+		float: right;
+		margin-top: 25px;
+		border: 1px solid #E0E0E0; 
+	}
+	/*搜索按钮（submit）格式*/
+	div.nav2_content>input.button_input{
+		width: 54px;
+		height: 54px;
+		background:url(pic_src/search.png);
+		background-position: center;
+		background-size: cover;
+		border: 1px solid #E0E0E0;
+		border-left: none; 
+		margin-top: 25px;
+		float: right;
+	}
+	div.nav2_content>input.text_input:hover{
+		border-color: #7B9CD3;
+	}
+	div.nav2_content>input.button_input:hover{
+		border-color: #7B9CD3;
+		border-left: 1px solid #7B9CD3;
+	}
+/*网页主体1：侧边栏css style*/
+	/*总宽度*/
+	div.main{
+		width: 100%;
+		height: 460px;
+	}
+	/*内容宽度*/
+	div.l_nav_bar{
+		width: 1226px;
+		height: 460px;
+		margin: auto;
+	}
+	/*纵向导航栏ul格式*/
+	div.item>ul{
+		float: left;
+		width:234px;
+		background:rgba(0, 0, 0, 0.6);
+		padding:20px 0px;
+		position: absolute;
+		z-index: 1;
+	}
+	/*纵向导航栏li统一格式*/
+	div.item>ul>li{
+		width: 16%;
+		height:42px;
+		font:16px /42px Arail;
+	}
+	/*纵向导航栏li中的a标签的统一格式*/
+	div.item>ul>li>a{
+		display:block;
+		width:204px;
+		height:42px;
+		padding-left:30px;
+		color:white;
+		font-size: 14px;
+	}
+	/*纵向导航栏li中的a被鼠标指针获取焦点时的格式*/
+	div.item>ul>li>a:hover{
+		background:orange;
+	}
+	/*span内容统一格式*/
+	div.item>ul>li>a>span{
+		float:right;
+		margin-right:25px;
+	}
+	/*右边内容部分图片显示格式，并且以一部分图片作为纵向导航栏的背景*/
+	div.content{
+		position: absolute;
+		z-index: -1;
+	}
+	div.content>img.l_nav_img{
+		width: 1226px
+		height: 460px;
+		float: right;
+		position: absolute;
+		z-index: -1;
+	}
+	/*每个导航栏的内容样式（ul）*/
+	div#item_content_1{
+		width: 991px;
+		height: 458px;
+		background: white;
+		float: right;
+		border: 1px solid #E0E0E0;
+		border-left: none;
+		display: none;
+	}
+	div#item_content_1>ul{
+		width: 991px;
+		height: 458px;
+	}
+	div#item_content_1>ul>li{
+		float: left;
+		width: 225px;
+		height: 41px;
+		padding: 18px 20px;
+	}
+	div#item_content_1>ul>li>a{
+		width: 225px;
+		height: 41px;
+		color: #333;
+	}
+	div#item_content_1>ul>li>a:hover{
+		color: #ff6700;
+	}
+	div#item_content_1>ul>li>a>img{
+		float: left;
+		width: 40px;
+		height: 40px;
+		padding-right: 10px;
+	}
+	div#item_content_1>ul>li>a>span{
+		font-size: 14px;
+		line-height: 41px;
+	}
+
+/*网页主体2：侧边导航栏下方一个选择表格，和三个图片链接部分css style*/
+	/*总宽度*/
+	div.main2{
+		width: 100%;
+		height: 170px;
+		margin-top: 14px;
+	}
+	/*内容宽度，并内容居中*/
+	div.main2_content{
+		width: 1226px;
+		height: 170px;
+		margin: auto;
+	}
+	/*左边第一个选择表格style*/
+	div.main2_content>div.tab{
+		width: 234px;
+		height: 170px;
+		background-color: #5F5750;
+		margin-right: 10px;
+		float: left;
+	}
+	/*选择表格中的ul格式*/
+	div.main2_content>div.tab>ul{
+		width: 234px;
+		height: 85px;
+	}
+	/*选择表格中的li统一格式*/
+	div.main2_content>div.tab>ul>li{
+		width: 77px;
+		font-size: 8px;
+		height: 84px;
+		float: left;
+		border-right:1px solid #665E57;
+		border-bottom: 1px solid #665E57;
+		text-align: center;
+	}
+	div.main2_content>div.tab>ul>li>a{
+		color: rgba(255,255,255,0.7);
+	}
+	div.main2_content>div.tab>ul>li>a:hover{
+		color: white;
+	}
+	/*选择表格第一排最后一个li的右边不需要border*/
+	div.main2_content>div.tab>ul>li#F{
+		border-right: none;
+		border-bottom: 1px solid #665E57;
+	}
+	/*选择表格第二排最后一个li的右边不需要border*/
+	div.main2_content>div.tab>ul>li#H{
+		border: none;
+	}
+	/*选择表格中的logo图*/
+	div.tab>ul>li>a>img{
+		padding-top:8px;
+	}
+	/*后面三个产品介绍图片格式*/
+	div.main2_content>a>img{
+		margin-left: 5px;
+		width: 316px;
+		height: 170px;
+	}
+	/*最后一个产品介绍图片的格式*/
+	div.main2_content>a>img#main2_3{
+		display: block;
+		float: right;
+	}
+/*网页主体3：小米闪购文字css style*/
+	/* 总宽度 */
+	div.main3{
+		width: 100%;
+		height: 58px;
+		margin-top:16px;
+	}
+	/* 内容 */
+	div.light_b{
+		width: 1226px;
+		height: 58px;
+		margin:auto;
+	}
+	/* 小米闪购文字样式 */
+	div.light_b>h2.tilte{
+		display: block;
+		float: left;
+		font-size: 22px;
+	    font-weight: 200;
+	    color: #333;
+	    
+		line-height: 58px;
+	}
+	/* 前进后退字符样式 */
+	div.light_b>a>p{
+		display: block;
+		float: right;
+		margin-top: 15px;
+		width: 36px;
+		height: 24px;
+		border: 1px solid #E0E0E0;
+		text-align: center;
+		color:#B2B0B0;
+	}
+	div.light_b>a>p#run{
+		border-right: none;
+	}
+	div.light_b>a>p:hover{
+		color: #ff6700;
+	}
+
+/*网页主体4：小米闪购下方的图片介绍部分css style*/
+	/* 总宽度 */
+	div.main4{
+		width: 100%;
+		height: 340px;
+	}
+	/* 内容 */
+	div.main4_content{
+		width: 1226px;
+		height:340px;
+		margin: auto;
+	}
+	/* content包含一个ul，ul格式 */
+	div.main4_content>ul{
+		width: 1226px;
+		height: 340px;
+	}
+	/* ul中所有li的统一格式 */
+	div.main4_content>ul.main4_ul>li{
+		float: left;
+		width: 234px;
+		height: 340px;
+		margin-right: 14px;
+		background-color:#FAFAFA; 
+	}
+	div.main4_content>ul.main4_ul>li.main4_li_5{
+		margin-right: 0px;
+	}
+	/* li中所有hr的统一格式 */
+	ul.main4_ul>li>hr{
+		border: none;
+		border-top: 1px solid;
+	}
+	/* 每个li中的hr的颜色不同，单独设置*/
+	ul.main4_ul>li.main4_li_1>hr{
+		border-top-color: #E53935;
+	}
+	ul.main4_ul>li.main4_li_2>hr{
+		border-top-color: #FFAC13;
+	}
+	ul.main4_ul>li.main4_li_3>hr{
+		border-top-color: #83C44E;
+	}
+	ul.main4_ul>li.main4_li_4>hr{
+		border-top-color: #2196F3;
+	}
+	ul.main4_ul>li.main4_li_5>hr{
+		border-top-color: #E53939;
+	}
+	/* li中所有a的统一格式 */
+	ul.main4_ul>li>a{
+		display: inline-block;
+		width: 234px;
+		height: 339px;
+	}
+	/* 除第一个li外，余下四个li中的img的统一格式 */
+	ul.main4_ul>li>a>img{
+		width: 160px;
+		height: 166px;
+		margin-left: 37px;
+		margin-bottom: 33px;
+		padding-top: 39px;
+	}
+	/* 第一个li中的img格式 */
+	ul.main4_ul>li.main4_li_1>a>img{
+		width: 234px;
+		height: 340px;
+		padding: 0px;
+		margin: 0px;
+	}
+	/* 除第一个li外，余下四个li中的h3的统一格式 */
+	ul.main4_ul>li>a>h3{
+		font-size:14px;
+		font-weight:400;
+		color:#000000;
+		text-align: center;
+	}
+	/* 除第一个li外，余下四个li中的p.introduce的统一格式 */
+	ul.main4_ul>li>a>p.introduce{
+		height: 18px;
+		font-size: 12px;
+		/*将超出的字符用省略*/
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		color: #b0b0b0;
+		margin-top:3px; 
+		text-align: center;
+	}
+	/* 除第一个li外，余下四个li中的p.price的统一格式 */
+	ul.main4_ul>li>a>p.price{
+		font-size:14px;
+		padding: 8px;
+		text-align: center;
+	}
+	ul.main4_ul>li>a>p.price>span{
+		color: #FA6509;
+	}
+	ul.main4_ul>li>a>p.price>del{
+		color: #b0b0b0;
+	}
+/*网页主体5：横向广告图片链接css style */
+	div.main5{
+		width: 100%;
+		height: 120px;
+		text-align: center;
+		margin-top: 40px;
+		margin-bottom: 40px; 
+	}
+	div.main5>a>img.ad_pic{
+		width: 1226px;
+		height: 120px;
+		margin: auto;
+	}
+/*网页主体6：手机产品区css style*/
+	/*总宽度*/
+	div.main6{
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 40px;
+		height: 672px;
+		background-color: #F5F5F5;
+	}
+	/*内容宽度*/
+	div.main6_content{
+		width: 1226px;
+		height: 672px;
+		margin: auto;
+	}
+	/*文字部分div总格式*/
+	div.main6_content>div.font{
+		width: 1226px;
+		height: 58px;
+	}
+	/*文字部分h2格式*/
+	div.main6_content>div.font>h2{
+		margin: 0;
+    	font-size: 22px;
+    	font-weight: 200;
+    	line-height: 58px;
+    	float: left;
+	}
+	/*文字部分 a 格式*/
+	div.main6_content>div.font>a{
+		float: right;
+		font-size: 16px;
+	    line-height: 58px;
+	    color: #424242;
+	}
+	/*手机广告图片格式(左边)*/
+	div.main6_content>div.phone_pic>a>img{
+		float: left;
+		width: 234px;
+		height: 614px;
+	}
+	/*八个手机产品图片展示ul格式（右边）(两个ul)*/
+	div.main6_content>div.phone_pic>ul{
+		float: right;
+		width: 992px;
+		height: 307px;
+	}
+	/* 两个ul中所有li的统一格式 */
+	div.main6_content>div.phone_pic>ul>li{
+		float: left;
+		width: 234px;
+		height: 300px;
+		margin-left: 14px;
+		margin-bottom: 14px;
+		background-color: white;
+	}
+	/* li中所有a的统一格式 */
+	div.main6_content>div.phone_pic>ul>li>a{
+		display: inline-block;
+		width: 234px;
+		height: 300px;
+		text-align: center;
+	}
+	/* 除第一个li外，余下四个li中的img的统一格式 */
+	div.main6_content>div.phone_pic>ul>li>a>img{
+		width: 160px;
+		height: 160px;
+		padding-top: 20px;
+		padding-bottom: 20px; 
+	}
+	/* 除第一个li外，余下四个li中的h3的统一格式 */
+	div.main6_content>div.phone_pic>ul>li>a>h3{
+		font-size:14px;
+		font-weight:400;
+		color:#000000;
+		text-align: center;
+	}
+	/* 除第一个li外，余下四个li中的p.introduce的统一格式 */
+	div.main6_content>div.phone_pic>ul>li>a>p.introduce{
+		height: 18px;
+		font-size: 12px;
+		/*将超出的字符用省略*/
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		color: #b0b0b0;
+		margin-top:3px; 
+		text-align: center;
+	}
+	/* 除第一个li外，余下四个li中的p.price的统一格式 */
+	div.main6_content>div.phone_pic>ul>li>a>p.price{
+		font-size:14px;
+		padding: 8px;
+		text-align: center;
+		color: #FA6509;
+	}
+/*尾部*/
+	/*总宽度*/
+	div.footer{
+		width: 100%;
+	}
+/*尾部横排分类栏+分割线css style*/
+	/*内容宽度*/
+	div.foot_hori_bar{
+		width: 1226px;
+		height: 80px;
+		margin: auto;
+	}
+	/*横排分类栏ul格式*/
+	div.foot_hori_bar>ul{
+		width: 1226px;
+		height: 25px;
+		margin: auto;
+		padding-top: 28px; 
+	}
+	/*横排分类栏所有li的统一格式*/
+	div.foot_hori_bar>ul>li{
+		float: left;
+		width: 242px;
+		height: 25px;
+		border-left: 1px solid #e0e0e0;
+		text-align: center;
+	}
+	/*第一个li没有左边的border*/
+	div.foot_hori_bar>ul>li:first-child{
+		border-left: none;
+	}
+	/*li中所有a的统一格式*/
+	div.foot_hori_bar>ul>li>a{
+		display: inline-block;
+		color: #616161;
+		font-size: 16px;
+		line-height: 25px;
+		margin: auto;
+	}
+	div.foot_hori_bar>ul>li>a:hover{
+		color: #ff6700;
+	}
+	/*li中所有img的统一格式*/
+	div.foot_hori_bar>ul>li>a>img{
+		float: left;
+	}
+	/*分割线格式*/
+	div.footer>hr{
+		width: 1226px;
+		border:none;
+		border-top: 1px solid #E0E0E0; 
+		margin: auto;
+		margin-bottom: 40px; 
+	}
+/*尾部(左部)帮助等信息分类css style*/
+	/*内容宽度*/
+	div.help_ect{
+		width: 1226px;
+		height: 152px;
+		margin: auto;
+	}
+	/*外部横向排列的ul格式*/
+	div.help_ect>ul.hori_ul{
+		width: 973px;
+		height: 112px;
+		margin-bottom: 40px;
+		border-right: 1px solid #E0E0E0;
+		float: left;
+	}
+	div.help_ect>ul.hori_ul>li{
+		width: 160px;
+		float: left; 
+	}
+	/*直接包裹文字li的格式*/
+	div.help_ect>ul.hori_ul>li>ul.vert_ul>li{
+		font-size: 12px;
+		margin-top: 10px;
+	}
+	div.help_ect>ul.hori_ul>li>ul.vert_ul>li>a{
+		color: #757575;
+	}
+	div.help_ect>ul.hori_ul>li>ul.vert_ul>li>a:hover{
+		color: #FF6700;
+	}
+	/*第一排li格式不同*/
+	div.help_ect>ul.hori_ul>li>ul.vert_ul>li:first-child{
+		font-size: 14px;
+		margin-bottom: 26px;
+		margin-top: 0px;
+		color: #424242;
+	}
+/*尾部(右部)联系客服css style*/
+	/*内容大小*/
+	div.customeer_service{
+		width: 252px;
+		height: 112px;
+		margin-bottom: 40px;
+		text-align: center;
+		float: right;
+	}
+	/*文字信息样式*/
+	div.customer_service>p{
+		display: inline-block;
+		width: 252px;
+		text-align: center;
+	}
+	div.customer_service>p#phone_number{
+		font-size: 22px;
+	    color: #ff6700;
+	}
+	div.customer_service>p#time{
+		font-size: 12px;
+		color: #616161;
+	}
+	div.customer_service>p#connect>a{
+		font-size: 12px;
+		color: #ff6700;
+		display: inline-block;
+		border: 1px solid #ff6700;
+		text-align: center;
+		line-height: 30px;
+		width: 120px;
+		height: 30px;
+		float: right;
+		margin-right: 66px;
+	}
+	div.customer_service>p#connect>a:hover{
+		background-color: #ff6700;
+		color: white;
+	}
+/*尾部网站信息css style*/
+	/*内容宽度*/
+	div.website_info{
+		width: 1226px;
+		margin: auto;
+		margin-top: 15px;
+	}
+	/*左部小米logo样式*/
+	div.website_info>img{
+		width:57px;
+		height: 57px;
+		float: left;
+		margin-right: 10px; 
+		margin-top: 4px;
+	}
+	/*文字信息链接样式*/
+	div.website_info>div.info{
+		display: inline-block;
+		width: 689px;
+		height: 57px;
+	}
+	div.website_info>div.info>p.link_info{
+		display: inline-block;
+		font-size: 12px;
+		color: #757575;
+	}
+	div.website_info>div.info>p.link_info>a{
+		color: #757575;
+	}
+	div.website_info>div.info>p.link_info>a:hover{
+		color: #ff6700;
+	}
+	div.website_info>div.info>p.permit_info{
+		display: inline-block;
+		font-size: 12px;
+		color: #b0b0b0;
+	}
+	div.website_info>div.info>p:last-child{
+		display: inline-block;
+		font-size: 12px;
+		color: #b0b0b0;
+	}
+	/*右部网站信息图片样式*/
+	div.website_info>div.v_logo{
+		display: inline-block;
+		height: 57px;
+		width: 436px;
+		text-align: center;
+	}
+	div.website_info>div.v_logo>img{
+		padding-bottom:20px; 
+	}
+/*尾部结尾文字css style*/
+	div.last_font{
+		display: inline-block;
+		width: 1226px;
+		height: 50px
+		margin: auto;
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+
+
+
+
+	
+	
+
+
+
